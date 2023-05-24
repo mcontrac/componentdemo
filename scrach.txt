@@ -1,0 +1,11 @@
+  const dropdown = document.querySelector(".w-48");
+
+  const handleClick = (event) => {
+    if (dropdown.contains(event.target)) {
+      console.log("Inside DropDown");
+    } else {
+      console.log("Outside DropDown");
+    }
+  };
+
+  document.addEventListener("click", handleClick, true);
